@@ -8,7 +8,22 @@ body {
 }
 
 a {
-	color: #00b7ff;
+	padding: 1px 6px;
+	border: 1px outset buttonborder;
+	border-radius: 3px;
+	color: buttontext;
+	background-color: buttonface;
+	text-decoration: none;
+	cursor: default;
+	margin-left: 40px;
+}
+
+a:hover {
+	background-color: #e1e1e1;
+}
+
+a:active {
+	background-color: #b6b6b6;
 }
 
 ul.message-list {
