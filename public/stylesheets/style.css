@@ -1,3 +1,7 @@
+:root {
+	--form-max-width: 10rem;
+}
+
 body {
 	padding: 50px;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -34,4 +38,35 @@ div.message-container h2 {
 
 div.message-container div.date {
 	color: #6d6c74;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+form div.input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	max-width: var(--form-max-width);
+	margin: auto;
+}
+
+form div.input-container label {
+	min-width: 10rem;
+	color: #6d6c74;
+}
+
+form div.input-container.text-area textarea {
+	resize: none;
+}
+
+.input-field {
+	border-radius: 3px;
+}
+
+form button {
+	margin: auto;
 }

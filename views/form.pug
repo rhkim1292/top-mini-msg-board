@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+  form(
+    method="POST"
+    action="/new"
+  )
+    div(class="input-container")
+      label(
+        for="author"
+      ) Author
+      input(
+        id="author"
+        name="author"
+        type="text"
+        class="input-field"
+      )
+    div(class="input-container text-area")
+      label(
+        for="message"
+      ) Message
+      textarea(
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        class="input-field"
+      )
+    button(
+      type="submit"
+    ) Submit
