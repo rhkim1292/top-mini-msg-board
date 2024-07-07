@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  ul(class="message-list")
+    each msg in messages
+      li
+        div(class="message-container")
+          div(class="name-date-container")
+            h2=msg.user
+            div(class="date")
+              =msg.added.toLocaleString()
+          div=msg.text

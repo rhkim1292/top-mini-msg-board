@@ -1,0 +1,37 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00b7ff;
+}
+
+ul.message-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+div.message-container {
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 1rem;
+	max-width: 380px;
+}
+
+.name-date-container {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+div.message-container h2 {
+	margin: 0;
+}
+
+div.message-container div.date {
+	color: #6d6c74;
+}
